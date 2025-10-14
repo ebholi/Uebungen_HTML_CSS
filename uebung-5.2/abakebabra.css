@@ -19,6 +19,73 @@ main {
 }
 
 h1 span {
-    display: block;
+    display: flex;
     font-size: 0.8em;
+}
+
+body {
+    background-color: #EEE;
+    margin: 0 10% 0 10%;
+}
+
+.text_bg {
+    position: relative;
+    display: inline-block;
+    color: black;
+    z-index: 1;
+    padding: 5px 15px;
+    border-radius: 4px;
+    background: rgba(200, 200, 200, 0.5);
+}
+
+.header_flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.header_flex nav {
+    margin-left: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 10px 15px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    background: rgba(200,200,200,0.5);
+    text-align: center;
+}
+
+.footer_flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+footer ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer ul li {
+    padding: 10px 15px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    background: rgba(200,200,200,0.5);
+    text-align: center;
 }
